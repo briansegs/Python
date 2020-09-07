@@ -39,3 +39,40 @@ print(password_generator_rf('ShrBloo'))
 print(password_generator_rf('AlQ'))
 print(password_generator_rf('AbeSimp'))
 
+#Splitting Strings II: 
+authors = "Audre Lorde, William Carlos Williams, Gabriela Mistral, Jean Toomer, An Qi, Walt Whitman, Shel Silverstein, Carmen Boullosa, Kamala Suraiyya, Langston Hughes, Adrienne Rich, Nikki Giovanni"
+
+author_names = authors.split(',')
+print(author_names)
+print('_____')
+
+n = authors.split(' ')
+print(n)
+author_last_names = []
+for name in n:
+  if name[-1] == ',':
+    author_last_names.append(name[:-1])
+  if name == n[-1]:
+    author_last_names.append(name)
+
+print('_____') 
+print(author_last_names)
+expected_output = ['Lorde', 'Williams', 'Mistral', 'Toomer', 'Qi', 'Whitman', 'Silverstein', 'Boullosa', 'Suraiyya', 'Hughes', 'Rich', 'Giovanni']
+assert author_last_names == expected_output
+#Note: Having to find the pattern in the string and then make code around it was fun.
+#Note: Solving how to deal with the last name in the list breaking the pattern was challenging but also fun.
+
+#Splitting Strings II: Refactored
+author_last_names = []
+for name in author_names:
+  author_last_names.append(name.split()[-1])
+
+expected_output = ['Lorde', 'Williams', 'Mistral', 'Toomer', 'Qi', 'Whitman', 'Silverstein', 'Boullosa', 'Suraiyya', 'Hughes', 'Rich', 'Giovanni']
+assert author_last_names == expected_output
+#Note: I didn't get why this worked. I had to rubber duck my way through it. It's a better solution
+
+#Splitting Strings II: Refactored2 (Kat's request)
+author_last_names = [name.split()[-1] for name in author_names]
+
+expected_output = ['Lorde', 'Williams', 'Mistral', 'Toomer', 'Qi', 'Whitman', 'Silverstein', 'Boullosa', 'Suraiyya', 'Hughes', 'Rich', 'Giovanni']
+assert author_last_names == expected_output
