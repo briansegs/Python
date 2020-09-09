@@ -76,3 +76,15 @@ author_last_names = [name.split()[-1] for name in author_names]
 
 expected_output = ['Lorde', 'Williams', 'Mistral', 'Toomer', 'Qi', 'Whitman', 'Silverstein', 'Boullosa', 'Suraiyya', 'Hughes', 'Rich', 'Giovanni']
 assert author_last_names == expected_output
+
+#.strip() and .join()
+love_maybe_lines = ['Always    ', '     in the middle of our bloodiest battles  ', 'you lay down your arms', '           like flowering mines    ','\n' ,'   to conquer me home.    ']
+
+love_maybe_lines_stripped = []
+for i in love_maybe_lines:
+  love_maybe_lines_stripped.append(i.strip())
+
+print(love_maybe_lines_stripped)
+love_maybe_full = '\n'.join(love_maybe_lines_stripped)
+print(love_maybe_full)
+#Note: .join() takes the list as the argument. 
