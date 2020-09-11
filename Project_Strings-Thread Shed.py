@@ -169,8 +169,8 @@ for lst in thread_sold:
     if len(split_color) == 1:
       thread_sold_split.append(split_color[0])
     else:
-      for i in split_color:
-        thread_sold_split.append(i)
+      for item in split_color:
+        thread_sold_split.append(item)
 #print(thread_sold_split)
 
 def color_count(color):
