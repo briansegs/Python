@@ -21,3 +21,16 @@ print(unique_english_letters("Apple"))
 print(unique_english_letters("purlpe"))
 print(unique_english_letters("Axelander"))
 print(unique_english_letters("Add"))
+
+# Count X
+def count_char_x(word, x):
+  count = 0 
+  for letter in word:
+    if letter in x:
+      count += 1
+  return count
+# Tests:
+print(count_char_x("mississippi", "s"))
+# should print 4
+print(count_char_x("mississippi", "m"))
+# should print 1
