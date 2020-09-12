@@ -199,10 +199,9 @@ print(make_spoonerism("a", "b"))
 
 # Add Exclamation:
 def add_exclamation(word):
-  lst = word
-  while len(lst) < 20:
-    lst += '!'
-  return lst
+  while len(word) < 20:
+    word += '!'
+  return word
 #Note: I couldn't tell that this was a call for a while loop...
 # Tests:
 print(add_exclamation("Codecademy"))
