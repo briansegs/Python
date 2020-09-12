@@ -81,9 +81,17 @@ print(substring_between_letters("apple", "p", "c"))
 def x_length_words(sentence, x):
   split = sentence.split()
   for word in split:
-    if len(word) >= x:
-      return True
-    return False
+    if len(word) < x:
+      return False
+  return True
+
+# Tests:
+print(x_length_words("i like apples", 2))
+# should print False
+print(x_length_words("he likes apples", 2))
+# should print True
+print(x_length_words("Amys d d d", 2))
+# should print False
 
 # Tests:
 print(x_length_words("i like apples", 2))
@@ -108,10 +116,25 @@ print(check_for_name("My name is jamie", "Jamie"))
 print(check_for_name("My name is Samantha", "Jamie"))
 # should print False
 
+# Check Name Refactored:
+def check_for_name_rf(sentence, name):
+  return name.lower() in sentence.lower()
+
+  # return sentence.lower().find(name.lower()) != -1
+# Notes:   
+# Tests:
+print(check_for_name_rf("My name is Jamie", "Jamie"))
+# should print True
+print(check_for_name_rf("My name is jamie", "Jamie"))
+# should print True
+print(check_for_name_rf("My name is Samantha", "Jamie"))
+# should print False
+
+
 
 # Every Other Letter:
 def every_other_letter(word):
-  return word[0:len(word):2]
+  return word[::2]
 
 # Tests:
 print(every_other_letter("Codecademy"))
@@ -120,7 +143,6 @@ print(every_other_letter("Hello world!"))
 # should print Hlowrd
 print(every_other_letter(""))
 # should print 
-
 
 # Reverse:
 def reverse_string(word):
@@ -156,8 +178,7 @@ print(reverse_string_rf(""))
 
 # Reverse Refactored2:
 def reverse_string_rf2(word):
-  reverse = [i for i in word[::-1]]
-  return ''.join(reverse)
+  return word[::-1]
   
 
 # Tests:
