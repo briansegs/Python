@@ -19,4 +19,5 @@ Challenge Projects:
 * [Censor Dispenser](https://www.codecademy.com/practice/projects/censor-dispenser)
 * [coded_correspondence](https://www.codecademy.com/courses/learn-python-3/informationals/python3-coded-communication)
 * [Abruptly Goblins](https://www.codecademy.com/courses/learn-python-3/informationals/python3-abruptly-goblins)
+* [Become A Pokémon Master](https://www.codecademy.com/practice/projects/become-a-pokemon-master)
 
