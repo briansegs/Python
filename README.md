@@ -3,9 +3,26 @@ Learning Python and Github
 
 This is the [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-I am learning Python3 by taking a course on Codeacademy. 
+Code signal fun
+* [Challenges 1-8](https://github.com/briansegs/Python/blob/master/CodeSignal_1-8.py)
 
+I am learning Python3 by taking a course on Codeacademy. 
 These are my cheatsheets.
+* [Syntax](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-syntax/cheatsheet)
+* [Functions](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-functions/cheatsheet)
+* [Control Flow](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-control-flow/cheatsheet)
+* [Lists](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-lists/cheatsheet)
+* [Loops](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-loops/cheatsheet)
+* [Strings](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-strings/cheatsheet)
+* [Modules](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-modules/cheatsheet)
+* [Dictionaries](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-dictionaries/cheatsheet)
+* [Files](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-files/cheatsheet)
+* [Classes](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-classes/cheatsheet)
+* [Function Arguments](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-function-arguments/cheatsheet)
+
+
+
+Class work
 * [Loops](https://github.com/briansegs/Python/blob/master/loops_cheatsheet.py)
 * [Strings](https://github.com/briansegs/Python/blob/master/Strings_Cheatsheet.py)
 * [Strings Project "Thread shed"](https://github.com/briansegs/Python/blob/master/Project_Strings-Thread%20Shed.py)
